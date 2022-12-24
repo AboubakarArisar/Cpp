@@ -1,0 +1,69 @@
+#include<iostream>
+#include<string>
+using namespace std;
+struct soccer
+{
+	string name[3];
+	int pnum[3];
+	float points[3];
+}s;
+void tbl(soccer a)
+{
+	cout<<"------------------------------------------------"<<endl;
+	cout<<"Player Number\tPlayer name\tPoints scored"<<endl;
+	cout<<"------------------------------------------------"<<endl;
+	for(int i=0; i<3; i++)
+	{
+    cout<<a.pnum[i]<<"\t\t"<<a.name[i]<<"\t\t"<<a.points[i]<<endl;
+	}
+	cout<<"------------------------------------------------"<<endl;
+	
+}
+void search(soccer c)
+{
+	char search;
+	cout<<"Which player score do you want to search : "<<endl;
+	cout<<"1. "<<c.name[0]<<endl;
+	cout<<"2. "<<c.name[1]<<endl;
+	cout<<"3. "<<c.name[2]<<endl;
+	cin>>search;
+	if(search=='1')
+	{
+		cout<<c.name[0]<<" has scored "<<c.points[0]<<" points."<<endl;
+	}
+	else if (search=='2')
+	{
+		cout<<c.name[1]<<" has scored "<<c.points[1]<<" points."<<endl;
+	}
+	else if(search=='3')
+	{
+		cout<<c.name[2]<<" has scored "<<c.points[2]<<" points."<<endl;
+	}
+	else
+	{
+		cout<<"Invaild number!."<<endl;
+	}
+	
+}
+int main()
+{
+	
+	float tot=0;
+
+for(int i=0; i<3; i++)
+{
+	cout<<"Enter player number : ";
+	cin>>s.pnum[i];
+	cout<<"Enter player name : ";
+	cin>>s.name[i];
+	cout<<"Enter points scored by  "<<s.name[i]<<"  : ";
+	cin>>s.points[i];
+	tot+=s.points[i];
+	cout<<endl;
+}
+
+tbl(s);
+cout<<"Total number of points scored by team : "<<tot<<endl;
+search(s);
+return 0;
+}
