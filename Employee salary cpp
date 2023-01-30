@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+struct person
+{
+	int wagerate;
+	int vacation;
+	char status;
+}s;
+void disemp(struct person)
+{
+cout<<"Enter vacations done by employee : ";
+cin>>s.vacation;
+cout<<"Enter status Hourly or Salaried : ";
+cin>>s.status;
+if(s.status=='H'|| s.status=='h')
+{
+	cout<<"Enter wage rate of employee : ";
+    cin>>s.wagerate; //wagerate in rupees per hout
+	cout<<"Employee daily wages are : "<<s.wagerate*12<<endl;  //here i have given 12 hours for hourly workers
+}
+else
+{
+	cout<<"Employee salary is : "<<30000<<endl; //i have assigned 30000 salary for salaried workers
+}
+cout<<"Empolyee have done "<<s.vacation<<" vacations. "<<endl;
+cout<<"Employee status is ";
+if(s.status=='H'||s.status=='h')
+cout<<"Hourly";
+ else
+
+	cout<<"Salaried.";
+
+}
+int main()
+{
+disemp(s);
+return 0;
+}
