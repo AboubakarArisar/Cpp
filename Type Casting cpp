@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float x = (int) (4.5/2);
+
+int y = (int) 4.5/2;
+
+int z = 4.5 / int(2);
+
+ 
+
+cout<<x<<" "<<y<<" "<<z;
+return 0;
+}
