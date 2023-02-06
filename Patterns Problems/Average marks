@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int tot,average,score,student,marks;
+
+
+cout<<"For how many students do you have score-->";
+cin>>student;
+cout<<"Test scores each student have-->";
+cin>>score;
+for (int i=1; i<=student; i++)
+{
+	tot=0;
+	for(int j=1; j<=score; j++)
+	{
+	
+	cout<<"Enter score "<<j<<" for student "<<i<<"-->";
+	cin>>marks;
+    
+    tot+=marks;
+
+}
+average=(tot/score);
+
+cout<<"Average-->"<<average<<"\n"; 
+}
+
+return 0;
+}
