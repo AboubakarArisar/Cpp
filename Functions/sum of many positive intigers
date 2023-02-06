@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int sum(int);
+int main()
+{
+	int range;
+	cout<<"Enter the range upto you want the sum of positive intigers-->";
+	cin>>range;
+	cout<<"The sum of "<<range<<" positive numbers is-->"<<sum(range);
+return 0;
+}
+int sum(int a)
+{
+	int sum=0;
+	for(int i=1; i<=a; i++)
+	{
+		sum+=i;
+	}
+	return sum;
+}
