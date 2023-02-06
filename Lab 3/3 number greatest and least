@@ -1,0 +1,23 @@
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+ double a,b,c;  
+ cout<<"Enter first number?"<<endl;  
+ cin>>a;  
+ cout<<"Enter second number?"<<endl;  
+ cin>>b;  
+ cout<<"Enter third number?"<<endl;  
+ cin>>c;  
+ if (a>b&&a>c)  
+ {  
+ cout<<"First Number is the Greatest number."<<endl;   }  
+ else if (a<b&&b>c)  
+ {  
+ cout<<"Second Number is the Greatest number."<<endl;   }  
+ else if (a<b&&b<c)  
+ {  
+ cout<<"Third Number is the Greatest number."<<endl;   }  
+ 
+system ("pause");  return 0;  
+} 
