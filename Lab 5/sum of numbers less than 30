@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num,sum=0;
+	cout<<"Enter any Number : ";
+    cin>>num;
+    while(num>=0)
+    {
+    	
+    	if (num>=0 &&num<=30)
+    	{
+    		sum=sum+num;
+		 
+    		cout<<"Enter any Number : ";
+           cin>>num;
+       }
+   else 
+	{
+    	cout<<"The number is greater than 30 and won't be calculated!"<<endl;
+    	cout<<"Enter any Number : ";
+           cin>>num;
+	}	
+	}
+	cout<<"The sum is : "<<sum;
+return 0;
+}
