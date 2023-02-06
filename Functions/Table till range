@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int print_table(int);
+int print_table(int,int);
+int main()
+{
+int num;
+cout<<"Enter the number for Table-->";
+cin>>num;
+cout<<"------------TABLE OF "<<num<<"-------------"<<endl;
+print_table(num);
+int table,range;
+cout<<"Enter the number of which table you want-->";
+cin>>table;
+cout<<"Enter the range till table you want-->";
+cin>>range;
+cout<<"------------TABLE OF "<<table<<"--------------"<<endl;
+print_table(table,range);
+return 0;
+}
+int print_table(int a)
+{
+	for(int i=1; i<=10; i++)
+	{
+	cout<<i<<"x"<<a<<" = "<<i*a<<endl;
+	}
+}
+int print_table(int a, int b)
+{
+	for(int i=1; i<=b; i++)
+	{
+			cout<<i<<"x"<<a<<" = "<<i*a<<endl;
+	}
+}
+
+
