@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+double percentage(double,int);
+int main()
+{
+double total,obtained;
+cout<<"Enter total Marks-->";
+cin>>total;
+cout<<"Enter Obtained Marks-->";
+cin>>obtained;
+cout<<"Your Percentage is-->"<<percentage(obtained,total)<<" % "<<endl;
+return 0;
+}
+double percentage(double obt, int tot)
+{
+	return (obt/tot)*100;
+}
