@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+double sub(int,int);
+double mul(int,int);
+double div(int,int);
+double mod(int,int);
+
+
+
+
+int main()
+{
+int num1, num2;
+cout<<"Enter number one-->";
+cin>>num1;
+cout<<"Enter number second-->";
+cin>>num2;
+cout<<"Subtraction of two numbers is : "<<sub(num1, num2)<<endl;
+cout<<"Multiplication of  two number is : "<<mul(num1, num2)<<endl;
+cout<<"Division of two numbers is : "<<div(num1, num2)<<endl;
+cout<<"Modulus of two numbers is : "<<mod(num1, num2)<<endl;
+return 0;
+}
+double  sub(int a, int b)
+{
+	return a-b;
+}
+double mul(int a, int b)
+{
+	return a*b;
+}
+double div(int a, int b)
+{
+	return a/b;
+}
+double mod(int a, int b)
+{
+	return a%b;
+}
