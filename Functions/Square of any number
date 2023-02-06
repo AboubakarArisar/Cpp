@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath.h>
+using namespace std;
+int square(int);
+int main()
+{
+	int num;
+cout<<"Enter the number-->";
+cin>>num;
+cout<<"Square of the number is-->"<<square(num)<<endl;
+return 0;
+}
+int square(int a)
+{
+	return pow(a,2);
+}
