@@ -1,0 +1,19 @@
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+ int a,b;  
+ cout<<"enter a?"<<endl;  
+ cin>>a;  
+ cout<<"enter b?"<<endl;  
+ cin>>b;  
+ if (a==b)  
+ {  
+ cout<<"Both numbers are Equal.";   }  
+ else  
+ {  
+ cout<<"Numbers are not equal.";  
+ }  
+system ("pause");  
+return 0;  
+} 
