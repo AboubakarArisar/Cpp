@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+double percentage(double,int);
+char grade(double);
+int main()
+{
+double total,obtained;
+cout<<"Enter total Marks-->";
+cin>>total;
+cout<<"Enter Obtained Marks-->";
+cin>>obtained;
+cout<<"Your Percentage is-->"<<percentage(obtained,total)<<" % "<<endl;
+double a = percentage(obtained,total);
+cout<<"Your grade is "<<grade(a);
+return 0;
+}
+double percentage(double obt, int tot)
+{
+	return (obt/tot)*100;
+}
+
+char grade(double a)
+{
+	if(a>=80 && a<=100)
+	{
+		return 'A';
+	}
+	else if(a>=70 && a<=79)
+	{
+		return 'B';
+	}
+	else if(a>=60 && a<=69)
+	{
+		return 'C';
+	}
+	else
+	{
+		return 'F';
+	}
+}
