@@ -1,0 +1,28 @@
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+ int per;  
+ cout<<"What is your Percentage?"<<endl;   cin>>per;  
+ if (per>=90)  
+ {  
+ cout<<"Your Grade is A1"<<endl;  
+ }  
+ else if (per>=80&&per<89)  
+ {  
+ cout<<"Your Grade is A";  
+ }  
+ else if (per>=70&&per<79)  
+ {  
+ cout<<"Your Grade is B";  
+ }  
+ else if (per>=60&&per<69)  
+ {  
+ cout<<"Your Grade is C";  
+ }  
+ else  
+ { 
+ cout<<"Your Grade is F";   }  
+system ("pause");  
+return 0;  
+} 
