@@ -1,0 +1,21 @@
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+ double a,b;  
+ cout<<"Enter first number?"<<endl;  
+ cin>>a; 
+ cout<<"Enter second number?"<<endl;  
+ cin>>b;  
+ if (a>b)  
+ {  
+ cout<<"First number is greater than the second."<<endl;   }  
+ else if (b>a)  
+ {  
+ cout<<"Second number is greater than the first."<<endl;   }  
+ else if (a==b)  
+ {  
+ cout<<"Both numbers are equal."<<endl;   }  
+system ("pause");  
+return 0;  
+} 
