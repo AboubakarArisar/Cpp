@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int size;
+
+cout<<"Enter the size of the array --> ";
+cin>>size;
+int array_1[size];
+int array_2[size];
+for(int i=0; i<size; i++)
+{
+	cout<<"Enter the number --> ";
+	cin>>array_1[i];
+}
+for(int j=(size-1); j>=0; j--)
+{
+	array_2[j]=array_1[(size-1)-j];
+}
+cout<<"\nElements in the first array : \n";
+for(int a=0; a<size; a++)
+{
+	cout<<array_1[a]<<" ";
+}
+cout<<"\nElements in the second array : \n";
+for(int b=0; b<size; b++)
+{
+	cout<<array_2[b]<<" ";
+}
+return 0;
+}
