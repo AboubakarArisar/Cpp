@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	double average=0,sum=0;
+int avg[10]={22,12,56,14,47,89,13,12,45,36};
+for(int i=0; i<9; i++)
+{
+	sum+=avg[i];
+	average=sum/10;
+}
+cout<<"\n\nThe average of the elements in array is --> "<<average<<endl;
+return 0;
+}
