@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int size;
+int min=0,a;
+cout<<"Enter size of an array : ";
+cin>>size;
+int array[size];
+for(int i=0; i<size; i++)
+{
+	cout<<"Enter the number : ";
+	cin>>array[i];
+	
+
+}
+min=array[0];
+for(int j=1; j<size; j++)
+{
+	if(min>array[j])
+	{
+		min=array[j];
+	}
+}
+cout<<"The smallest value in the array is "<<min<<endl;
+return 0;
+}
