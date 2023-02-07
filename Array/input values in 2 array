@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int array_1[5]={2,63,54,24,7};
+int array_2[5];
+for(int i=0; i<5; i++)
+{
+	array_2[i]=array_1[i];
+}
+cout<<"Values in the first array are : \n";
+for(int i=0; i<5; i++)
+{
+    cout<<array_1[i]<<" ";
+}
+
+cout<<"\nValues in the Second array are : \n";
+for(int j=0; j<5; j++)
+{
+    cout<<array_2[j]<<" ";
+}
+
+    return 0;
+}
