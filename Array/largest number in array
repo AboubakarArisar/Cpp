@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int size;
+int max=0,a;
+cout<<"Enter size of an array : ";
+cin>>size;
+int array[size];
+for(int i=0; i<size; i++)
+{
+	cout<<"Enter the number : ";
+	cin>>array[i];
+	
+
+}
+max=array[0];
+for(int j=1; j<size; j++)
+{
+	if(max<array[j])
+	{
+		max=array[j];
+	}
+}
+cout<<"The Largest value in the array is "<<max<<endl;
+return 0;
+}
