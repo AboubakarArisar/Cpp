@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int size;
+	cout<<"Enter the size of array --> ";
+	cin>>size;
+int array_1[size];
+for(int i=0; i<size; i++)
+{
+	cout<<"Enter the number-->";
+	cin>>array_1[i];
+}
+cout<<"\n\nThe numbers in the Reverse Order are : \n";
+for(int j=(size-1); j>=0; j--)
+{
+	cout<<array_1[j]<<"  ";
+}
+return 0;
+}
