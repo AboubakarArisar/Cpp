@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+bool a;
+int size;
+cout<<"Enter size of an array : ";
+cin>>size;
+int array[size];
+for(int i=0; i<size; i++)
+{
+	cout<<"Enter the number : ";
+	cin>>array[i];
+	
+
+}
+int num;
+cout<<"Enter any number to search in the array --> ";
+cin>>num;
+for(int j=0; j<size; j++)
+{
+	if(num==array[j])
+	{
+	a=true;
+	}
+	else
+	{
+		 a=false;
+	}
+}
+
+if(a==true)
+{
+	cout<<num<<" is Present in array.";
+}
+else
+{
+	cout<<num<<" is not Present in array.";
+}
+return 0;
+}
+
+
