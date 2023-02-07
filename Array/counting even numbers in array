@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int size;
+cout<<"Enter the array size you wonder --> ";
+cin>>size;
+int even_array[size];
+for(int i=0; i<size; i++)
+{
+	cout<<"\nEnter the number -->";
+	cin>>even_array[i];
+	
+}
+cout<<"\nEven numbers in the array are : \n";
+for(int j=0; j<size; j++)
+{
+	if(even_array[j]%2==0)
+	{
+		cout<<even_array[j]<<" ";
+	}
+}
+return 0;
+}
