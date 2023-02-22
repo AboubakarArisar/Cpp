@@ -1,0 +1,72 @@
+#include<iostream>
+
+using namespace std;
+int main()
+{
+	int size;
+	cout<<"Enter the size of array : ";
+	cin>>size;
+int array[size];
+int len = (sizeof(array)/sizeof(array[0]));
+for(int i=0; i<len; i++)
+{
+cout<<"Enter value "<<i+1<<" : ";
+cin>>array[i];
+}
+int temp;
+cout<<"============================="<<endl;
+cout<<"============Before==========="<<endl;
+cout<<"============================="<<endl;
+
+
+for(int i=0; i<len; i++)
+{
+cout<<" value "<<i+1<<" : "<<array[i]<<endl;
+}
+for(int i=0; i<len; i++)
+{
+	for(int j=0; j<(len-1); j++)
+	{
+		if(array[j]>array[j+1])
+		{
+			temp=array[j];
+			array[j]=array[j+1];
+			array[j+1]=temp;
+		}
+	}
+}
+cout<<"============================="<<endl;
+cout<<"============After============"<<endl;
+cout<<"============================="<<endl;
+
+for(int i=0; i<len; i++)
+{
+cout<<" value "<<i+1<<" : "<<array[i]<<endl;
+}
+cout<<endl;
+int input;
+cout<<"Enter the number to search in the array : ";
+cin>>input;
+int low = 0, high = len-1, mid=(low+high)/2 ;
+bool chk=false;
+while(low<=high)
+{
+	if(input>array[mid])
+	low=mid+1;
+	else if(input<array[mid])
+	high=mid-1;
+	else
+	{
+	cout<<input<<" is found at "<<mid<<endl;
+	chk = true;
+	break;
+	}
+ mid = (low+high)/2;
+}
+if(chk==false)
+cout<<"Number is not found : "<<endl;
+
+
+
+return 0;
+}
