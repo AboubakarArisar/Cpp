@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+struct Intro
+    {
+    	string name;
+    	int id;
+    } s;
+int main()
+{  
+	cout<<"enter the name of stu:";
+	cin>>s.name;
+	cout<<s.sname<<endl;
+    cout<<"Enter the student id :";
+    cin>>s.id;
+    cout<<s.id<<endl;
+
+	return 0;
+}
