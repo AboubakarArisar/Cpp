@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Person {
+private:
+    string name;
+     string gender;
+    int age;
+
+public:
+    Person() : name(""), gender(""), age(0) {}
+    Person( string a,  string b, int c) : name(a), gender(b), age(c) {}
+
+    void setName( string name) { this->name = name; }
+    void setGender( string gender) { this->gender = gender; }
+    void setAge(int age) { this->age = age; }
+
+     string getName() { return name; }
+     string getGender() { return gender; }
+    int getAge() { return age; }
+
+    void sayHello() {
+         string str = getSalutation();
+         cout << "Greetings to you " << str <<  endl;
+    }
+
+    bool isAdult() {
+        if (age < 18)
+            return false;
+        else
+            return true;
+    }
+
+     string getSalutation() {
+        if (gender == "Male") {
+            return "MR. " + name;
+        } else {
+            return "MS. " + name;
+        }
+    }
+};
+
+int main() {
+    Person p;
+    p.setName("Aboubakar");
+    p.setAge(19);
+    p.setGender("Male");
+    p.sayHello();
+
+    return 0;
+}
