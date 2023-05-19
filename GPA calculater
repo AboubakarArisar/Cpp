@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int courses;
+    int chrs = 0;
+    double gpa = 0.0;
+
+    cout << "Enter the number of courses: ";
+    cin >> courses;
+
+    double* grades = new double[courses];
+    int* credithrs = new int[courses];
+	double* totGrd = new double[courses];
+    for(int i = 0; i < courses; i++)
+    {
+        cout << "GPA in course " << i+1 << ": ";
+        cin >> grades[i];
+
+        cout << "Credit hours in course " << i+1 << ": ";
+        cin >> credithrs[i];
+        
+        cout<<endl;
+    }
+	for(int k = 0; k < courses; k++)
+	{
+		totGrd[k] = (grades[k] * credithrs[k]);
+	}
+    for(int j = 0; j < courses; j++)
+    {
+        chrs += credithrs[j];
+        gpa += totGrd[j];
+    }
+
+    double finalGpa = (gpa / chrs);
+    cout << "Your GPA is: " << finalGpa << endl;
+
+    delete[] grades;
+    delete[] credithrs;
+
+    return 0;
+}
