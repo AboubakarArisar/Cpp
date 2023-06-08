@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int* sorting (int ar[], int size)
+{
+
+	int temp;
+	for(int i = 0 ; i < size; i++)
+	{
+		for(int j = 0; j < size - 1; j++)
+		{
+			if(ar[j] > ar[j+1])
+			{
+				temp = ar[j];
+				ar[j] = ar[j+1];
+				ar[j+1] = temp;
+			}
+		}
+	}
+	return ar;
+}
+int main()
+{
+	int array[10] = {0,9,8,5,4,3,6,2,1};
+
+	cout<<"Before"<<endl;
+	for(int j = 0; j < 10; j++)
+	{
+		cout<<array[j]<<" ";
+	}
+	cout<<endl;
+	int* pon = array;
+	int* poin = sorting(pon,10);
+	
+	cout<<"After"<<endl;
+	for(int j = 0; j < 10; j++)
+	{
+		cout<<array[j]<<" ";
+	}
+}
