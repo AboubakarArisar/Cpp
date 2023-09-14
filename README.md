@@ -1,2 +1,2 @@
-# c-semester
+# c++-semester
 first semester
