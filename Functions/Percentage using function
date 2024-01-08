@@ -9,7 +9,7 @@ cin>>total;
 cout<<"Enter Obtained Marks-->";
 cin>>obtained;
 cout<<"Your Percentage is-->"<<percentage(obtained,total)<<" % "<<endl;
-return 0;
+return 0; 
 }
 double percentage(double obt, int tot)
 {
