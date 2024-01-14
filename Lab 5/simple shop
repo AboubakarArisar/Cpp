@@ -14,7 +14,7 @@ cout<<"0. Exit the program"<<endl;
 cout<<"Enter any number to select any product to buy or 0 to exit: ";
 cin>>n;
 
-if (n==1)
+if (n==1) 
 {
 cout<<"You have selected Books. "<<"Enter Quantity: ";
 cin>>Q1;
