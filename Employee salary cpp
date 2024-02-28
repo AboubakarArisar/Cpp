@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 struct person
-{
+{ 
 	int wagerate;
 	int vacation;
 	char status;
