@@ -1,2 +1,2 @@
 # c++-semester
-first semester
+first semester practice codes 
